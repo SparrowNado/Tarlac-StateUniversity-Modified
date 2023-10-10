@@ -10145,6 +10145,7 @@ a.has-text-danger-dark:focus {
 
 .has-text-grey {
     color: #7a7a7a !important;
+    font-size: 25px;
 }
 
 .has-background-grey {
@@ -15743,19 +15744,51 @@ print {
     margin-right: auto;
 }
 
+
+
+
+
+
+
+/* Hover effect on Card first */
 .amplify-card {
     border-radius: 6px;
+
+    transition: transform .5s;
 }
+
+.amplify-card:hover {
+   transform: scale(1.5);
+  
+}
+
+/*  */
+
+
+
+
+
 
 .amplify-card .content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    transition: transform .5s;
 }
+
+
+
+
 
 .amplify-image-card img {
     border-radius: 6px 6px 0 0;
+   
 }
+
+
+
+
+
 
 .amplify-texture-overlay {
     height: 100%;
@@ -15967,6 +16000,24 @@ print {
 .amplify-accordion .card .card-content {
     padding: 1em;
 }
+
+
+
+.card-content{
+    transition: transform 0.5s;
+}
+
+
+
+.card-content:hover{
+    transform: scale(1.2);
+    z-index: 100;
+}
+
+
+
+
+
 
 .amplify-accordion .is-active .card-block {
     max-height: 100em;
