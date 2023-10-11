@@ -10144,7 +10144,8 @@ a.has-text-danger-dark:focus {
 }
 
 .has-text-grey {
-    color: #7a7a7a !important;
+    /* former color is #7a7a7a */
+    color: #800000 !important;
     font-size: 25px;
 }
 
@@ -15782,9 +15783,15 @@ print {
 
 .amplify-image-card img {
     border-radius: 6px 6px 0 0;
+    transition: transform .5s;
    
 }
 
+
+.amplify-image-card img:hover {
+    border-radius: 6px 6px 0 0;
+    transform: scale(1.1);
+}
 
 
 
@@ -16010,7 +16017,7 @@ print {
 
 
 .card-content:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 100;
 }
 
